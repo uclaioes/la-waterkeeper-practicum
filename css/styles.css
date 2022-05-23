@@ -144,18 +144,15 @@ body {
     gap: 1vw;
     width: var(--min-width);
     margin: var(--spacing-large) auto;
-
+    background-image: url("img/akira-hojo-unsplash.jpg"); 
   }
 }
-
-
-
-
 
 
 header {
   grid-area: header;
   border-bottom: 1px solid var(--ucla-darker-blue);
+  
 }
 
 main {
@@ -179,7 +176,7 @@ h3 {
   margin: 0 0 var(--spacing) 0;
   font-family: var(--font-family-display);
   line-height: var(--line-height-heading);
-  text-transform: uppercase;
+  
 }
 
 h1 {
@@ -200,8 +197,19 @@ h3 {
   font-weight: var(--font-weight-bold);
 }
 
+header {
+  margin: 1em;
+  padding: 1em 2em;
+  
+  background-color: purple;
+}
 header h1 {
-  letter-spacing: 10px;
+  font-size: var(--font-size-display);
+  text-transform: lowercase;
+  font-style: italic;
+  color: white;
+  text-align: center;
+
 }
 
 .standfirst {
@@ -224,18 +232,7 @@ ol {
 }
 
 
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-}
-
-nav ul li {
-  justify-content: space-between;
-  margin: var(--spacing-small);
-}
-
-nav .active {
+.active {
   font-weight: 700;
   color: var(--ucla-darker-blue);
 }
