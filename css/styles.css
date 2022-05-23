@@ -144,7 +144,7 @@ body {
     gap: 1vw;
     width: var(--min-width);
     margin: var(--spacing-large) auto;
-    background-image: url("img/akira-hojo-unsplash.jpg"); 
+    
   }
 }
 
