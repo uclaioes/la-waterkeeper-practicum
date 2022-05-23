@@ -1,1 +1,1 @@
-# ucla-waterkeeper-practicum
+# la-waterkeeper-practicum
