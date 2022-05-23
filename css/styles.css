@@ -1,0 +1,256 @@
+@import url('https://use.typekit.net/iuu6suv.css');
+
+:root {
+
+  --font-family: aktiv-grotesk, sans-serif;
+  --font-family-display: aktiv-grotesk-condensed, sans-serif;
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-xbold: 800;
+  --font-weight-black: 900;
+  --font-size-xxxx-display: 6.583rem;
+  --font-size-xxx-display: 5.202rem;
+  --font-size-xx-display: 4.11rem;
+  --font-size-x-display: 3.653rem;
+  --font-size-display: 3.247rem;
+  --font-size-xxxx-large: 2.887rem;
+  --font-size-xxx-large: 2.566rem;
+  --font-size-xx-large: 2.027rem;
+  --font-size-x-large: 1.602rem;
+  --font-size-large: 1.266rem;
+  --font-size-medium: 1.125rem;
+  --font-size: 1rem;
+  --font-size-small: 0.889rem;
+  --font-size-x-small: 0.79rem;
+
+  --text-base-size: var(--font-size);
+  --text-scale-ratio: 1.125;
+  /* major second */
+  --line-height-text: 1.4;
+  --line-height-heading: 1;
+
+  /* hsl color space */
+  --ucla-gold: hsl(49, 100%, 50%);
+  /* #ffd100 */
+  --ucla-darker-gold: hsl(44, 100%, 59%);
+  /* #ffc72c */
+  --ucla-darkest-gold: hsl(41, 100%, 55%);
+  /* #ffb81c */
+  --ucla-yellow: hsl(60, 100%, 50%);
+
+  --ucla-blue: hsl(206, 63%, 42%);
+  /* #2774ae */
+  --ucla-lightest-blue: hsl(212, 95%, 93%);
+  /* #daebfe */
+  --ucla-lighter-blue: hsl(211, 67%, 73%);
+  /* #8bb8e8 */
+  --ucla-darker-blue: hsl(202, 100%, 26%);
+  /* #005587 */
+  --ucla-darkest-blue: hsl(202, 100%, 18%);
+  /* #003b5c */
+
+
+  --ucla-cyan: hsl(180, 100%, 50%);
+  --ucla-magenta: hsl(321, 100%, 50%);
+  --ucla-green: hsl(152, 100%, 50%);
+  --ucla-janss-steps-green: hsl(138, 55%, 43%);
+  --ucla-purple: hsl(259, 55%, 62%);
+
+  --ucla-black: hsl(0, 0%, 0%);
+  --ucla-black-90: hsl(0, 0%, 10%);
+  --ucla-black-80: hsl(0, 0%, 20%);
+  --ucla-black-70: hsl(0, 0%, 30%);
+  --ucla-black-60: hsl(0, 0%, 40%);
+  --ucla-black-50: hsl(0, 0%, 50%);
+  --ucla-black-40: hsl(0, 0%, 60%);
+  --ucla-black-30: hsl(0, 0%, 70%);
+  --ucla-black-20: hsl(0, 0%, 80%);
+  --ucla-black-10: hsl(0, 0%, 90%);
+  --ucla-white: hsl(0, 0%, 100%);
+
+  --border-radius-x-small: 0.25rem;
+  --border-radius-small: 0.5rem;
+  --border-radius-medium: 0.75rem;
+  --border-radius-large: 1rem;
+  --border-radius-circle: 50%;
+
+  --border-width-thin: 2px;
+  --border-width-thick: 5px;
+
+  --max-width: 90rem;
+  --min-width: 60rem;
+  --spacing-xx-small: 0.125rem;
+  --spacing-x-small: 0.25rem;
+  --spacing-small: 0.5rem;
+  --spacing: 0.75rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 1.5rem;
+  --spacing-x-large: 2rem;
+  --spacing-xx-large: 3rem;
+
+
+}
+
+@media (min-width: 48em) {
+  :root {
+    --font-size: 1.125rem;
+  }
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: var(--spacing-large) auto;
+  font-family: var(--font-family);
+  font-size: var(--text-base-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height-text);
+  color: var(--color-text-default);
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+  gap: 1vw;
+}
+
+@media (min-width: 30em) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "main main aside"
+      "main main aside"
+      "footer footer footer";
+    gap: 1vw;
+    width: var(--min-width);
+    margin: var(--spacing-large) auto;
+
+  }
+}
+
+
+
+
+
+
+header {
+  grid-area: header;
+  border-bottom: 1px solid var(--ucla-darker-blue);
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  border-top: 1px solid var(--ucla-darker-blue);
+  grid-area: footer;
+  padding-top: 2em;
+}
+
+
+h1,
+h2,
+h3 {
+  margin: 0 0 var(--spacing) 0;
+  font-family: var(--font-family-display);
+  line-height: var(--line-height-heading);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: var(--font-size-xxxx-display);
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-xx-display);
+  font-weight: var(--font-weight-bold);
+  margin-top: var(--spacing-x-large);
+}
+
+h3 {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-x-display);
+  font-weight: var(--font-weight-bold);
+}
+
+header h1 {
+  letter-spacing: 10px;
+}
+
+.standfirst {
+  font-size: var(--font-size-x-large);
+  margin-bottom: var(--spacing-x-large);
+}
+
+@media (min-width: 30em) {
+  .standfirst {
+    padding: 0;
+    margin: 0;
+    font-size: var(--font-size-xx-large);
+  }
+}
+
+ul,
+ol {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+nav ul li {
+  justify-content: space-between;
+  margin: var(--spacing-small);
+}
+
+nav .active {
+  font-weight: 700;
+  color: var(--ucla-darker-blue);
+}
+
+figure {
+  margin: var(--spacing-x-large);
+}
+
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+
+.ioes-logo {
+  max-width: 300px;
+}
