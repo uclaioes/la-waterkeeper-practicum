@@ -247,6 +247,9 @@ img {
   width: 100%;
 }
 
+.river-photo {
+  border: 2px solid black;
+}
 
 .ioes-logo {
   max-width: 300px;
