@@ -162,7 +162,7 @@ nav {
 
 main p:not(.lede) {
   
-  margin-left: 33%;
+  margin-left: 10%;
 }
 
 nav ul {
@@ -173,12 +173,12 @@ nav ul {
 }
 
 nav li {
-  background-color: tan;
+  background-color: rgb(148, 127, 84);
   margin-top: 1em;
 }
 
 nav li:hover {
-  background-color: brown;
+  background-color: rgb(165, 97, 42);
 }
 
 
@@ -229,16 +229,16 @@ h3 {
 }
 
 header {
-  margin: 1em;
+  margin: 0.5em;
   padding: 1em 2em;
-  background-color: rosybrown;
+  background-color: rgb(61, 110, 127);
 }
 header h1 {
   font-size: var(--font-size-display);
-  text-transform: lowercase;
   font-style: italic;
   color: white;
   text-align: center;
+  
 
 }
 
@@ -271,7 +271,7 @@ ol {
 
 .active {
   font-weight: 700;
-  background-color: brown;
+  background-color: rgb(165, 97, 42);
 }
 
 figure {
@@ -290,4 +290,30 @@ img {
 
 .ioes-logo {
   max-width: 300px;
+}
+
+.team {
+  font-size: var(--font-size-x-large);
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: var(--spacing-x-large);
+  text-align: center;
+}
+.ruben {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 20%;
+}
+.ava {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 20%;
+}
+.julia {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }
