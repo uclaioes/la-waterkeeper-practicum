@@ -156,13 +156,13 @@ main {
   grid-area: main;
 }
 
-nav {
-  grid-area: 🐻;
+main p {
+  border-width: 2px;
+  border-color: black;
 }
 
-main p:not(.lede) {
-  
-  margin-left: 10%;
+nav {
+  grid-area: 🐻;
 }
 
 nav ul {
@@ -254,6 +254,11 @@ header h1 {
   margin-bottom: var(--spacing-x-large);
 }
 
+.summary{
+  font-size: var(--font-size-x-large);
+  font-weight: bold;
+  text-align: center;
+}
 @media (min-width: 30em) {
   .standfirst {
     padding: 0;
@@ -292,28 +297,26 @@ img {
   max-width: 300px;
 }
 
-.team {
-  font-size: var(--font-size-x-large);
-  font-style: italic;
+.container {
+  display: flex;
+}
+
+.row {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+
+.profile .img-box {
+  opacity: 1;
+  display: block;
+  position: relative;
+}
+
+
+.profile h2 {
   font-weight: bold;
-  margin-bottom: var(--spacing-x-large);
-  text-align: center;
-}
-.ruben {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 20%;
-}
-.ava {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 20%;
-}
-.julia {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
+  font-size: 22px;
+  margin-top: 15px;
 }
