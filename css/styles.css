@@ -124,8 +124,8 @@ body {
 body {
   display: grid;
   grid-template-areas:
-    "header"
-    "nav"
+    "🐠"
+    "🐻"
     "main"
     "aside"
     "footer";
@@ -136,10 +136,9 @@ body {
   body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-      "header header header"
-      "nav nav nav"
-      "main main aside"
-      "main main aside"
+      "🐠 🐠 🐠"
+      "🐻 🐻 🐻"
+      "main main main"
       "footer footer footer";
     gap: 1vw;
     width: var(--min-width);
@@ -150,18 +149,50 @@ body {
 
 
 header {
-  grid-area: header;
-  border-bottom: 1px solid var(--ucla-darker-blue);
-  
+  grid-area: 🐠;  
 }
 
 main {
   grid-area: main;
 }
 
-aside {
-  grid-area: aside;
+nav {
+  grid-area: 🐻;
 }
+
+main p:not(.lede) {
+  
+  margin-left: 33%;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav li {
+  background-color: tan;
+  margin-top: 1em;
+}
+
+nav li:hover {
+  background-color: brown;
+}
+
+
+nav li a {
+  display: block;
+  padding: .5em 3em;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
 
 footer {
   border-top: 1px solid var(--ucla-darker-blue);
@@ -200,8 +231,7 @@ h3 {
 header {
   margin: 1em;
   padding: 1em 2em;
-  
-  background-color: purple;
+  background-color: rosybrown;
 }
 header h1 {
   font-size: var(--font-size-display);
@@ -213,7 +243,14 @@ header h1 {
 }
 
 .standfirst {
-  font-size: var(--font-size-x-large);
+  font-size: var(--font-size-large);
+  margin-bottom: var(--spacing-x-large);
+}
+
+.lede {
+  font-size: var(--font-size-medium);
+  font-style: italic;
+  font-weight: bold;
   margin-bottom: var(--spacing-x-large);
 }
 
@@ -221,7 +258,7 @@ header h1 {
   .standfirst {
     padding: 0;
     margin: 0;
-    font-size: var(--font-size-xx-large);
+    font-size: var(--font-size-x-large);
   }
 }
 
@@ -234,7 +271,7 @@ ol {
 
 .active {
   font-weight: 700;
-  color: var(--ucla-darker-blue);
+  background-color: brown;
 }
 
 figure {
