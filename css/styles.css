@@ -254,11 +254,12 @@ header h1 {
   margin-bottom: var(--spacing-x-large);
 }
 
-.summary{
-  font-size: var(--font-size-x-large);
+.summary {
+  font-size: var(--font-size-xx-large);
   font-weight: bold;
   text-align: center;
 }
+
 @media (min-width: 30em) {
   .standfirst {
     padding: 0;
