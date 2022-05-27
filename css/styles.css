@@ -12,47 +12,28 @@
   --font-weight-bold: 700;
   --font-weight-xbold: 800;
   --font-weight-black: 900;
-  --font-size-xxxx-display: 6.583rem;
-  --font-size-xxx-display: 5.202rem;
-  --font-size-xx-display: 4.11rem;
-  --font-size-x-display: 3.653rem;
-  --font-size-display: 3.247rem;
-  --font-size-xxxx-large: 2.887rem;
-  --font-size-xxx-large: 2.566rem;
-  --font-size-xx-large: 2.027rem;
-  --font-size-x-large: 1.602rem;
-  --font-size-large: 1.266rem;
-  --font-size-medium: 1.125rem;
+  
+  --font-size-display: 3.052rem;
+  --font-size-xx-large: 2.441rem;
+  --font-size-x-large: 1.953rem;
+  --font-size-large: 1.563rem;
+  --font-size-medium: 1.25rem;
   --font-size: 1rem;
-  --font-size-small: 0.889rem;
-  --font-size-x-small: 0.79rem;
-
-  --text-base-size: var(--font-size);
-  --text-scale-ratio: 1.125;
-  /* major second */
+  --font-size-small: 0.8rem;
+ 
   --line-height-text: 1.4;
   --line-height-heading: 1;
 
   /* hsl color space */
-  --ucla-gold: hsl(49, 100%, 50%);
-  /* #ffd100 */
-  --ucla-darker-gold: hsl(44, 100%, 59%);
-  /* #ffc72c */
-  --ucla-darkest-gold: hsl(41, 100%, 55%);
-  /* #ffb81c */
+  --ucla-gold: hsl(49, 100%, 50%); /* #ffd100 */
+  --ucla-darker-gold: hsl(44, 100%, 59%); /* #ffc72c */
+  --ucla-darkest-gold: hsl(41, 100%, 55%);  /* #ffb81c */
   --ucla-yellow: hsl(60, 100%, 50%);
-
-  --ucla-blue: hsl(206, 63%, 42%);
-  /* #2774ae */
-  --ucla-lightest-blue: hsl(212, 95%, 93%);
-  /* #daebfe */
-  --ucla-lighter-blue: hsl(211, 67%, 73%);
-  /* #8bb8e8 */
-  --ucla-darker-blue: hsl(202, 100%, 26%);
-  /* #005587 */
-  --ucla-darkest-blue: hsl(202, 100%, 18%);
-  /* #003b5c */
-
+  --ucla-blue: hsl(206, 63%, 42%); /* #2774ae */
+  --ucla-lightest-blue: hsl(212, 95%, 93%); /* #daebfe */
+  --ucla-lighter-blue: hsl(211, 67%, 73%); /* #8bb8e8 */
+  --ucla-darker-blue: hsl(202, 100%, 26%); /* #005587 */
+  --ucla-darkest-blue: hsl(202, 100%, 18%); /* #003b5c */
 
   --ucla-cyan: hsl(180, 100%, 50%);
   --ucla-magenta: hsl(321, 100%, 50%);
@@ -95,12 +76,6 @@
 
 }
 
-@media (min-width: 48em) {
-  :root {
-    --font-size: 1.125rem;
-  }
-}
-
 
 html {
   box-sizing: border-box;
@@ -115,7 +90,7 @@ html {
 body {
   margin: var(--spacing-large) auto;
   font-family: var(--font-family);
-  font-size: var(--text-base-size);
+  font-size: var(--font-sizew);
   font-weight: var(--font-weight);
   line-height: var(--line-height-text);
   color: var(--color-text-default);
@@ -211,20 +186,20 @@ h3 {
 }
 
 h1 {
-  font-size: var(--font-size-xxxx-display);
+  font-size: var(--font-size-xx-large);
   font-weight: var(--font-weight-bold);
 }
 
 h2 {
   font-family: var(--font-family-display);
-  font-size: var(--font-size-xx-display);
+  font-size: var(--font-size-x-large);
   font-weight: var(--font-weight-bold);
   margin-top: var(--spacing-x-large);
 }
 
 h3 {
-  font-family: var(--font-family-display);
-  font-size: var(--font-size-x-display);
+  font-family: var(--font-family-x-large);
+  font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
 }
 
@@ -298,26 +273,19 @@ img {
   max-width: 300px;
 }
 
-.container {
-  display: flex;
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1vw;  
 }
 
-.row {
-  flex: 33.33%;
-  padding: 5px;
+.team img {
+  width: 300px;
+  aspect-ratio: 1 / 1;
 }
-
-
-
-.profile .img-box {
-  opacity: 1;
-  display: block;
-  position: relative;
-}
-
-
-.profile h2 {
+.team figcaption {
+  font-size: var(--font-size-medium);
   font-weight: bold;
-  font-size: 22px;
-  margin-top: 15px;
 }
+
