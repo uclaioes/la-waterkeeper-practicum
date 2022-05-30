@@ -273,6 +273,13 @@ img {
   max-width: 300px;
 }
 
+.teamtitle {
+  text-align: center;
+}
+
+.clienttitle {
+  text-align: center;
+}
 
 .team {
   display: grid;
@@ -282,10 +289,16 @@ img {
 
 .team img {
   width: 300px;
+  border: 3px solid black;
   aspect-ratio: 1 / 1;
 }
-.team figcaption {
+.team figcaption h2{
   font-size: var(--font-size-medium);
   font-weight: bold;
+  text-align: center;
 }
-
+.team figcaption p{
+  font-size: var(--font-size-small);
+  font-weight: italic;
+  text-align: center;
+}
