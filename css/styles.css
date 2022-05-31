@@ -102,8 +102,7 @@ body {
 body {
   display: grid;
   grid-template-areas:
-    "🐠"
-    "🐻"
+    "header"
     "main"
     "aside"
     "footer";
@@ -116,20 +115,21 @@ body {
   body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-      "🐠 🐠 🐠"
-      "🐻 🐻 🐻"
+      "header header header"
       "main main main"
       "footer footer footer";
-    gap: 1vw;  
+    align-items: start;
+   
   }
 }
 
 
-
 header {
   position: sticky;
-  grid-area: 🐠;  
-  padding: 1em 2em;
+  top: 0;
+  grid-area: header;
+  display: grid;
+  grid-template-rows: 1fr fit-content;
   background-color: rgb(61, 110, 127);
 }
 
@@ -138,11 +138,17 @@ header h1 {
   font-style: italic;
   color: white;
   text-align: center;
+  padding: .5em;
+  
 }
 
 
 nav {
-  grid-area: 🐻;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(148, 127, 84, 1);
+  
 }
 
 nav ul {
@@ -150,11 +156,12 @@ nav ul {
   flex-wrap: wrap;
   justify-content: space-around;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav li {
   background-color: rgb(148, 127, 84);
-  margin-top: 1em;
 }
 
 nav li:hover {
@@ -187,6 +194,8 @@ footer {
   border-top: 1px solid var(--ucla-darker-blue);
   grid-area: footer;
   padding-top: 2em;
+  width: var(--min-width);
+  margin: var(--spacing-large) auto;
 }
 
 
