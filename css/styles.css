@@ -79,6 +79,8 @@
 
 html {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 *,
@@ -88,7 +90,8 @@ html {
 }
 
 body {
-  margin: var(--spacing-large) auto;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
   font-family: var(--font-family);
   font-size: var(--font-sizew);
   font-weight: var(--font-weight);
@@ -105,6 +108,8 @@ body {
     "aside"
     "footer";
   gap: 1vw;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 30em) {
@@ -115,26 +120,26 @@ body {
       "🐻 🐻 🐻"
       "main main main"
       "footer footer footer";
-    gap: 1vw;
-    width: var(--min-width);
-    margin: var(--spacing-large) auto;
-    
+    gap: 1vw;  
   }
 }
 
 
+
 header {
+  position: sticky;
   grid-area: 🐠;  
+  padding: 1em 2em;
+  background-color: rgb(61, 110, 127);
 }
 
-main {
-  grid-area: main;
+header h1 {
+  font-size: var(--font-size-display);
+  font-style: italic;
+  color: white;
+  text-align: center;
 }
 
-main p {
-  border-width: 2px;
-  border-color: black;
-}
 
 nav {
   grid-area: 🐻;
@@ -165,7 +170,16 @@ nav li a {
 }
 
 
+main {
+  grid-area: main;
+  width: var(--min-width);
+  margin: var(--spacing-large) auto;
+}
 
+main p {
+  border-width: 2px;
+  border-color: black;
+}
 
 
 
@@ -203,19 +217,7 @@ h3 {
   font-weight: var(--font-weight-bold);
 }
 
-header {
-  margin: 0.5em;
-  padding: 1em 2em;
-  background-color: rgb(61, 110, 127);
-}
-header h1 {
-  font-size: var(--font-size-display);
-  font-style: italic;
-  color: white;
-  text-align: center;
-  
 
-}
 
 .standfirst {
   font-size: var(--font-size-large);
