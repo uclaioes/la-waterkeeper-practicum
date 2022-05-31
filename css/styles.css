@@ -166,6 +166,7 @@ nav li {
 
 nav li:hover {
   background-color: rgb(165, 97, 42);
+  transition: 0.3s;
 }
 
 
@@ -318,4 +319,11 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1vw;  
+}
+.maptitle{
+  text-align: center;
+}
+.maps img:hover{
+  transform: scale(200%);
+  background-color: rgb(61, 110, 127);
 }
