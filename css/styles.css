@@ -255,6 +255,10 @@ h3 {
   }
 }
 
+.home h2{
+  text-align: center;
+}
+
 ul,
 ol {
   margin-left: 0;
@@ -327,3 +331,4 @@ img {
   transform: scale(200%);
   background-color: rgb(61, 110, 127);
 }
+
