@@ -335,3 +335,8 @@ img {
   background-color: rgb(61, 110, 127);
 }
 
+.siteintro{
+  font-weight: bold;
+  font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+  font-stretch: expanded;
+}
