@@ -301,6 +301,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1vw;  
+  vertical-align: 50px;
 }
 
 .team img {
@@ -312,11 +313,13 @@ img {
   font-size: var(--font-size-medium);
   font-weight: bold;
   text-align: center;
+  margin-top: 3px;
 }
 .team figcaption p{
   font-size: var(--font-size-small);
   font-weight: italic;
   text-align: center;
+  margin-top: 0;
 }
 
 .maps {
