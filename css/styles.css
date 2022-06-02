@@ -131,6 +131,7 @@ header {
   display: grid;
   grid-template-rows: 1fr fit-content;
   background-color: rgb(61, 110, 127);
+  z-index: 1;
 }
 
 header h1 {
@@ -139,7 +140,6 @@ header h1 {
   color: white;
   text-align: center;
   padding: .5em;
-  
 }
 
 
@@ -309,6 +309,45 @@ img {
   border: 3px solid black;
   aspect-ratio: 1 / 1;
 }
+.areli:hover img{
+  -webkit-filter: grayscale(1) ;
+   filter: grayscale(1);
+}
+.ava:hover img{
+  -webkit-filter: grayscale(1) ;
+   filter: grayscale(1);
+}
+.caroline:hover img{
+  -webkit-filter: grayscale(1) ;
+   filter: grayscale(1);
+}
+.kat:hover img{
+  -webkit-filter: grayscale(1) ;
+   filter: grayscale(1);
+}
+.julia:hover img{
+  -webkit-filter: grayscale(1) ;
+   filter: grayscale(1);
+}
+.ruben:hover img{
+  -webkit-filter: grayscale(1) ;
+   filter: grayscale(1);
+}
+.sierra:hover img{
+  -webkit-filter: grayscale(1) ;
+   filter: grayscale(1);
+}
+.alan:hover img{
+  -webkit-filter: grayscale(1) ;
+   filter: grayscale(1);
+}
+.waterkeepericonm:hover img{
+  -webkit-filter: grayscale(1) ;
+   filter: grayscale(1);
+}
+
+
+
 .team figcaption h2{
   font-size: var(--font-size-medium);
   font-weight: bold;
@@ -337,6 +376,6 @@ img {
 
 .siteintro{
   font-weight: bold;
-  font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
-  font-stretch: expanded;
 }
+
+span.taller { transform: scaleY(1.5); }
