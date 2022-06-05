@@ -310,36 +310,36 @@ img {
   aspect-ratio: 1 / 1;
 }
 .areli:hover img{
-  -webkit-filter: grayscale(1) ;
-   filter: grayscale(1);
+  -webkit-filter: saturate(0.5) ;
+   filter: saturate(0.5);
 }
 .ava:hover img{
-  -webkit-filter: grayscale(1) ;
-   filter: grayscale(1);
+  -webkit-filter: saturate(0.5) ;
+   filter: saturate(0.5);
 }
 .caroline:hover img{
-  -webkit-filter: grayscale(1) ;
-   filter: grayscale(1);
+  -webkit-filter: saturate(0.5) ;
+   filter: saturate(0.5);
 }
 .kat:hover img{
-  -webkit-filter: grayscale(1) ;
-   filter: grayscale(1);
+  -webkit-filter: saturate(0.5) ;
+   filter: saturate(0.5);
 }
 .julia:hover img{
-  -webkit-filter: grayscale(1) ;
-   filter: grayscale(1);
+  -webkit-filter: saturate(0.5) ;
+  filter: saturate(0.5);
 }
 .ruben:hover img{
-  -webkit-filter: grayscale(1) ;
-   filter: grayscale(1);
+  -webkit-filter: saturate(0.5) ;
+   filter: saturate(0.5);
 }
 .sierra:hover img{
-  -webkit-filter: grayscale(1) ;
-   filter: grayscale(1);
+  -webkit-filter: saturate(0.5) ;
+   filter: saturate(0.5);
 }
 .alan:hover img{
-  -webkit-filter: grayscale(1) ;
-   filter: grayscale(1);
+  -webkit-filter: saturate(0.5) ;
+   filter: saturate(0.5);
 }
 .waterkeepericonm:hover img{
   -webkit-filter: grayscale(1) ;
