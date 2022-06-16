@@ -368,6 +368,7 @@ img {
 }
 .maptitle{
   text-align: center;
+  padding: 30px;
 }
 .maps img:hover{
   transform: scale(200%);
@@ -379,3 +380,11 @@ img {
 }
 
 span.taller { transform: scaleY(1.5); }
+
+.about h2{
+  text-align: center;
+}
+
+.whatisapracticum{
+  margin-top: 200px; 
+}
